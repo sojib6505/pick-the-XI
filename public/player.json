@@ -1,0 +1,102 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "virat.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": "$144,000"
+  },
+  {
+    "playerId": 2,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "rashid.jpeg",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg spin",
+    "biddingPrice": "$108,000"
+  },
+  {
+    "playerId": 3,
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "stokes.avif",
+    "role": "All-rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm fast-medium",
+    "biddingPrice": "$120,000"
+  },
+  {
+    "playerId": 4,
+    "name": "MS Dhoni",
+    "country": "India",
+    "image": "dhoni.webp",
+    "role": "Wicket-keeper Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": "$132,000"
+  },
+  {
+    "playerId": 5,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "maxwell.webp",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": "$96,000"
+  },
+  {
+    "playerId": 6,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "williamson.png",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": "$114,000"
+  },
+  {
+    "playerId": 7,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "bumrah.webp",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$84,000"
+  },
+  {
+    "playerId": 8,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "shakib.jpeg",
+    "role": "All-rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm orthodox spin",
+    "biddingPrice": "$102,000"
+  },
+  {
+    "playerId": 9,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "warner.webp",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": "$126,000"
+  },
+  {
+    "playerId": 10,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "boult.jpg",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": "$72,000"
+  }
+]
