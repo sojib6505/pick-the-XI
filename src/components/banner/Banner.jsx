@@ -7,7 +7,7 @@ export default function Banner() {
             <h1 className="text-2xl text-white font-bold">Assemble Your Ultimate Dream 11 Cricket Team</h1>
             <p className="text-xl text-white">Beyond Boundaries Beyond Limits</p>
            <div className="border border-amber-300 rounded-sm">
-             <button className="font-bold border-4 border-gray-800 py-2 px-5 rounded-sm  bg-amber-300 cursor-pointer">Claim Free Credit</button>
+             <button className="font-bold border-4 border-gray-800 py-2 px-5 rounded-sm  bg-amber-300 cursor-pointer hover:text-xl">Claim Free Credit</button>
            </div>
         </div>
 
