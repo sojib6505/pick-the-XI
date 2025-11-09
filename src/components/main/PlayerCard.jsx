@@ -1,6 +1,6 @@
 
-export default function PlayerCard(player) {
-   const {playerId,name,country,image,role,battingType,bowlingType,biddingPrice} = player.player
+export default function PlayerCard({player,addCard}) {
+   const {playerId,name,country,image,role,battingType,bowlingType,biddingPrice} = player
     return (
         <>
             <div className="p-5 border border-gray-200 rounded-xl hover:bg-gray-200 ">
@@ -21,7 +21,7 @@ export default function PlayerCard(player) {
                         </div>
                         <div className="flex justify-between items-center">
                             <p>Price:{biddingPrice}</p>
-                            <button className="py-1 px-2 bg-gray-300 rounded-sm cursor-pointer font-bold hover:bg-amber-300">Choose Player</button>
+                            <button onClick={()=>addCard(player)} className="py-1 px-2 bg-gray-300 rounded-sm cursor-pointer font-bold hover:bg-amber-300">Choose Player</button>
                         </div>
                     </div>
                 </div>

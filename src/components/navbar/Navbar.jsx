@@ -1,6 +1,5 @@
 
 export default function Navbar(clamCoins) {
-    console.log(clamCoins)
   return (
      <>
       <div className="flex justify-between items-center py-5">
