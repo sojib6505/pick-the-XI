@@ -1,5 +1,6 @@
 
-export default function Navbar() {
+export default function Navbar(clamCoins) {
+    console.log(clamCoins)
   return (
      <>
       <div className="flex justify-between items-center py-5">
@@ -14,7 +15,7 @@ export default function Navbar() {
                 <li className="hover:text-amber-300"><a href="#">Schedules</a></li>
             </ul>
             <div className="font-bold text-xl py-1 px-4 border border-gray-200 rounded-sm">
-                <p>Coin</p>
+                <p> {clamCoins.clamCoins} coin</p>
             </div>
         </div>
       </div>
