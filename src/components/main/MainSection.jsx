@@ -1,6 +1,6 @@
 import PlayerCard from "./PlayerCard";
 import { useEffect, useState } from "react"
-export default function MainSection({addCard}) {
+export default function MainSection({addCard,addCards}) {
      const [players ,setPlayers] = useState([])
      const [showAvailable, setAvailable] = useState(true)
           useEffect(()=>{
@@ -11,7 +11,7 @@ export default function MainSection({addCard}) {
     return (
         <>
             <div className="flex justify-between mb-10">
-                <h3 className="text-2xl font-bold">Available Players</h3>
+              <h3 className="text-2xl font-bold">Available Players {addCards.length} /{players.length} </h3>
                 <div className="rounded-2xl border border-gray-100">
                     <button onClick={()=>setAvailable(true)} className={` py-2 px-5 rounded-l-xl font-bold ${showAvailable? 'bg-amber-300':'hover:bg-amber-100'}`}>Available</button>
                     <button onClick={()=>setAvailable(false)} className={`py-2 px-5 rounded-r-xl font-bold ${!showAvailable ? 'bg-amber-300':'hover:bg-amber-100'}`}>Selected</button>
@@ -24,7 +24,7 @@ export default function MainSection({addCard}) {
           ) : (
               <div className="p-2  rounded-xl text-center mb-5">
           <h3 className="text-xl font-semibold text-gray-600">
-            Selected players 
+            Selected players {addCards.length} /6
           </h3>
         </div>
           )}

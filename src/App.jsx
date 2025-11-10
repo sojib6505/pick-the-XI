@@ -38,7 +38,7 @@ function App() {
       <div className="container mx-auto">
         <Navbar clamCoins={clamCoins}></Navbar>
         <Banner clamCoin={clamCoin}></Banner>
-        <MainSection addCard={addCard}></MainSection>
+        <MainSection addCard={addCard} addCards={addCards}></MainSection>
         <AddToCard addCardPlayer={addCards} delPlayer={deleteCard}></AddToCard>
      </div>
      <Footer></Footer>
