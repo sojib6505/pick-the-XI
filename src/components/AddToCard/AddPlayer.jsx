@@ -1,6 +1,6 @@
 
-
-export default function AddPlayer({ player }) {
+export default function AddPlayer({ player ,delPlayer }) {
+    console.log(typeof(delPlayer))
     const { playerId, name, country, image, role, battingType, bowlingType, biddingPrice } = player
     return (
         <div className="flex justify-between items-center mb-5 py-2 px-5 border border-gray-300 rounded-xl">
@@ -12,7 +12,7 @@ export default function AddPlayer({ player }) {
                 </div>
             </div>
             <div>
-               <button className="text-red-400 text-xl font-bold cursor-pointer">Delete</button>
+               <button onClick={()=>delPlayer(player)} className="text-red-400 text-xl font-bold cursor-pointer">Delete</button>
             </div>
         </div>
     )

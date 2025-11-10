@@ -14,19 +14,32 @@ function App() {
     const newCoin = clamCoins + 800000;
     setClamCoins(newCoin)
   }
-  
   const addCard = Player =>{
-    const newPlayer = [...addCards , Player]
-    setAddCards(newPlayer)
+     setAddCards(prev => {
+      const alreadyAdd = prev.find(p => p.playerId === Player.playerId)
+      if(alreadyAdd ){
+        alert('already added')
+      return prev
+     }
+     if(prev.length >= 6){
+      alert('Opps only select 6 player')
+      return prev
+     }
+     return [...prev , Player]
+     })
   }
-  
+
+  const deleteCard = delPlayer => {
+    const remaining = addCards.filter(Player => Player.playerId !== delPlayer.playerId)
+    setAddCards(remaining)
+  }
   return (
      <>
       <div className="container mx-auto">
         <Navbar clamCoins={clamCoins}></Navbar>
         <Banner clamCoin={clamCoin}></Banner>
         <MainSection addCard={addCard}></MainSection>
-        <AddToCard addCardPlayer={addCards}></AddToCard>
+        <AddToCard addCardPlayer={addCards} delPlayer={deleteCard}></AddToCard>
      </div>
      <Footer></Footer>
      </>
